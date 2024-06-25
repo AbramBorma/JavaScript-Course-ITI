@@ -16,13 +16,13 @@
 
 // // Answer of Part 2:
 
-// function welcomeName(name)
-// {
-//     alert ("Welcome, " + name)
-// }
-// var userName = prompt("What's your lovely Name?")
+function welcomeName(name)
+{
+    alert ("Welcome, " + name)
+}
+var userName = prompt("What's your lovely Name?")
 
-// welcomeName(userName);
+welcomeName(userName);
 
 /* 
 Question (2):
@@ -36,4 +36,37 @@ and display the result returned by the function.
 function sum(numOne, numTwo)
 {
      return +numOne + +numTwo;
+}
+
+
+/*
+Make a button that when click on it show prompt to the user please enter a string
+then show another prompt please enter a word and search if this word is existing in the string
+if not print not found if exists print its position.
+*/
+
+// Answer:
+
+function search()
+{
+    var text = prompt("Enter a text");
+    if (text === null)
+        {
+            return;
+        }
+    var searchWord = prompt("Search for a word");
+    if (searchWord === null)
+        {
+            return;
+        }
+    
+    var result = text.indexOf(searchWord)
+    if (result >= 0)
+        {
+            alert("The word " + searchWord + " does exist and its position is " + result);
+        }
+    else
+    {
+        alert("The word " + searchWord + " doesn't exist");
+    }
 }
