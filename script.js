@@ -40,6 +40,8 @@ function sum(numOne, numTwo)
 
 
 /*
+Question (5):
+
 Make a button that when click on it show prompt to the user please enter a string
 then show another prompt please enter a word and search if this word is existing in the string
 if not print not found if exists print its position.
@@ -69,4 +71,21 @@ function search()
     {
         alert("The word " + searchWord + " doesn't exist");
     }
+}
+
+/*
+Question (6):
+
+Write a JavaScript function to convert temperatures from Celsius, to Fahrenheit 
+[ Formula : c/5 = (f-32)/9] 
+[where c = temperature in Celsius and f = temperature in Fahrenheit]
+*/
+
+function convertTemp(temp1, temp2)
+{
+    var c = parseInt(prompt("Enter a celsius tempertaure"));
+    var f = (c*(9/5)) + 32;
+    var result = alert("The Temperature in Fahrenheit is " + f + " F");
+
+    return result;
 }
