@@ -97,10 +97,17 @@ function calculate(formula)
     return alert(result);
 }
 
-function count(word)
+function count()
 {
-    var word = prompt("Enter a word");
-    var c = word
+var userInput = prompt("Please enter a string:");
 
-    alert(c.length);
+var count = 0;
+
+for (var i = 0; i < userInput.length; i++) {
+  if (userInput.charAt(i).toUpperCase() === 'A') {
+    count++;
+  }
+}
+
+alert("The number of 'A' characters in the string is: " + count);
 }
