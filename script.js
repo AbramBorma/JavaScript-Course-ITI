@@ -89,3 +89,18 @@ function convertTemp(temp1, temp2)
 
     return result;
 }
+
+function calculate(formula)
+{
+    var formula = prompt("Enter a mathematical formula");
+    var result = eval(formula);
+    return alert(result);
+}
+
+function count(word)
+{
+    var word = prompt("Enter a word");
+    var c = word
+
+    alert(c.length);
+}
