@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Course: Lab3</title>
+    <style>
+        #scroll {
+            height: 400px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h2>Question 1</h2>
+    <p id="clock"></p>
+    <button onclick="startClock()">Start Clock</button>
+    <button onclick="stopClock()">Stop Clock</button>
+    <h2>Question 2</h2>
+    <a onclick="openWindow()" href="#">Open Advertising Window</a>
+    <br>
+    <a onclick="closeWidnow()" href="#">Close Advertising Window</a>
+    <hr>
+    <h2>Question 3</h2>
+    <div class="container">
+        <form action="hello.html" method="get">
+            <div class="username">
+                <label for="user">Username</label>
+                <input type="text" name="username" id="user" placeholder="Enter your username...">
+            </div>
+            <br>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password...">
+            </div>
+            <br>
+            <div class="submit">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+    <h2>Question 4</h2>
+    <button onclick="scrolling()">Scroll</button>
+    <h2>Question 5</h2>
+
+    <div class="Email">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email...">
+    </div>
+    <br>
+    <div class="submit">
+        <input onclick="validateEmail()" type="submit" value="Validate">
+    </div>
+    <br>
+    <div class="phone">
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" placeholder="Enter your phone...">
+    </div>
+    <br>
+    <div class="submit">
+        <input onclick="validatePhone()" type="submit" value="Validate">
+    </div>
+    <p id="scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo blanditiis, 
+        fuga, voluptatibus hic quasi impedit quaerat quisquam a asperiores quo maiores.
+        Quibusdam praesentium nemo laboriosam inventore doloribus vel?Unde?
+    </p>
+
+    <script src="lab3.js"></script>
+</body>
+</html>
