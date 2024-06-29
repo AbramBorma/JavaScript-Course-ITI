@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Course: Lab 4</title>
+    <style>
+        .border{
+            border: 3px solid blue;
+        }
+        .error, .pass-error
+        {
+            color: red;
+            font-size: 14px;
+            font-style: italic;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Question 1 -->
+    <h2>Question 1</h2>
+    <img src="balloons.jpg" class="image" alt="first_image" width="200" height="150" onmouseover="increaseOpacity(this)" onmouseleave="decreaseOpacity(this)">
+    <img src="images (1).jpeg" class="image" alt="second_image" width="200" height="150" onmouseover="increaseOpacity(this)" onmouseleave="decreaseOpacity(this)">
+    <hr>
+    <!-- Question 2 -->
+    <h2>Question 2</h2>
+    <span class="span">This is Span 1</span>
+    <span class="span">This is Span 2</span>
+    <span class="span">This is Span 3</span>
+    <span class="span">This is Span 4</span>
+    <br>
+    <br>
+    <button onclick="changeColors()">Change Color</button>
+    <hr>
+    <!-- Question 3 -->
+    <h2>Question 3</h2>
+    <input type="password" name="password" id="password">
+    <button onclick="showPassword()">Show Password</button>
+    <hr>
+    <!-- Question 4 -->
+    <h2>Question 4</h2>
+    <p id="question"></p>
+    <button onclick="goNext()">Next</button>
+    <button onclick="goBack()">Previous</button>
+    <hr>
+    <!-- Question 5 -->
+    <h2>Question 5</h2>
+    <p class="paragraph">This is the first paragraph</p>
+    <p class="paragraph">This is the second paragraph</p>
+    <p class="paragraph">This is the third paragraph</p>
+    <hr>
+    <!-- Question 6 -->
+    <h2>Question 6</h2>
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <label for="fullName">Full Name:</label>
+        <br>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your fullname">
+        <span id="error" class="error">Invalid Name</span>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="city">City:</label>
+        <br>
+        <select id="city" name="city">
+            <option value="city" selected disabled hidden></option>
+            <option value="cairo">Cairo</option>
+            <option value="alexandria">Alexandria</option>
+            <option value="giza">Giza</option>
+            <option value="sharm">Sharm El Sheikh</option>
+            <option value="luxor">Luxor</option>
+        </select>
+        <br>
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="password2" name="password" >
+        <br>
+        <label for="repeatPassword">Repeat Password:</label>
+        <br>
+        <input type="password" id="repeatPassword" name="repeatPassword" >
+        <span id="pass-error" class="pass-error">password and repeat password should be the same</span>
+        <br>
+        <label>
+            <input type="checkbox" id="terms" name="terms" required>
+            I accept the terms and conditions
+        </label>
+        <br>
+        <button type="submit" id="registerButton">Register</button>
+        <br>
+    </form>
+    <script src="lab4.js"></script>
+</body>
+</html>

@@ -111,3 +111,4 @@ for (var i = 0; i < userInput.length; i++) {
 
 alert("The number of 'A' characters in the string is: " + count);
 }
+
